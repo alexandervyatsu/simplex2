@@ -1,0 +1,18 @@
+Problem
+ EXAMPLE
+Minimize
+ OBJ:   COL01 + 2 COL05 -  COL08
+Subject To
+ ROW01:  3 COL01 +  COL02 - 2 COL04 -  COL05 -  COL08 >= 5/2
+ ROW02:  2 COL02 + 11/10 COL03 <= 21/10
+ ROW03:   COL03 +  COL06 = 4
+ ROW04:  14/5 COL04 - 6/5 COL07 >= 9/5 	\ RANGE (9/5, 5)
+    14/5 COL04 - 6/5 COL07 <= 5
+ ROW05:  28/5 COL01 +  COL05 + 19/10 COL08 >= 3 	\ RANGE (3, 15)
+    28/5 COL01 +  COL05 + 19/10 COL08 <= 15
+Bounds
+ 5/2 <= COL01
+ COL02 <= 41/10
+ 1/2 <= COL05 <= 4
+ COL08 <= 43/10
+End

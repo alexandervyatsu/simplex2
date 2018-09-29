@@ -1,0 +1,14 @@
+Problem
+ RAW1COST
+Minimize
+ COST:  1/5 SUP1 + 4/5 SUP2 + 3/10 SUP3
+Subject To
+ SUP1COST:  1/5 SUP1 >= 10
+ SUP2COST:  4/5 SUP2 >= 0
+ SUP3COST:  3/10 SUP3 >= 0
+ PURITY:  2/25 SUP1 + 1/50 SUP2 + 1/25 SUP3 <= 10
+ AMOUNT:   SUP1 +  SUP2 +  SUP3 = 200
+Bounds
+ SUP2 <= 75
+ SUP3 <= 100
+End
